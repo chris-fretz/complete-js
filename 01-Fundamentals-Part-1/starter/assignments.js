@@ -1,38 +1,40 @@
 // From: https://jonas.io/assignments/values-and-variables.html
 
-// Assignement: Values & Variables
+// ASSIGNMENT: Values & Variables
 const country = "United States";
 const continent = "North America";
 let population = 342;
 
-console.log(country);
-console.log(continent);
-console.log(population);
+// console.log(country);
+// console.log(continent);
+// console.log(population);
 
-// Assignment: Data Types
+// ASSIGNMENT: Data Types
 const isIsland = false;
 let language;
 
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+// console.log(typeof isIsland);
+// console.log(typeof population);
+// console.log(typeof country);
+// console.log(typeof language);
 
-// Assignment: let, const, and var
+// ASSIGNMENT: let, const, and var
 language = "English";
 
 // Assignment: Basic Operators
 const populationHalved = population / 2;
-console.log(populationHalved);
+// console.log(populationHalved);
 
 const populationPlusOne = population++;
-console.log(populationPlusOne);
+// console.log(populationPlusOne);
 
 populationComparedWithFinland = population > 6;
-console.log(populationComparedWithFinland);
+// console.log(populationComparedWithFinland);
 
 const populationMoreThanAvg = population < 33;
-console.log(populationMoreThanAvg);
+// console.log(populationMoreThanAvg);
 
 const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
-console.log(description);
+// console.log(description);
+
+// ASSIGNMENT: Strings & Template Literals
