@@ -1,5 +1,5 @@
 let js = "amazing";
-if (js === "amazing") alert("JavaScript is FUN!");
+// if (js === "amazing") alert("JavaScript is FUN!");
 
 40 + 8 + 23 - 10;
 console.log(40 + 8 + 23 - 10);
@@ -29,3 +29,23 @@ if(BMIMark > BMIJohn) {
 } else {
     console.log(`John's BMI (${BMIJohn})is higher than Mark's (${BMIMark})!`);
 }
+
+// Type Conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+// This will return NaN (Not a Number)
+// NaN is actually the data type of 'number', its just not a valid number
+console.log(Number('Jonas'));
+
+// The first instance will appear in white (string), the second in green (number)
+console.log(String(23), 23);
+
+// Type Coercion
+/* If there's a mix of types, the plus operator will convert everything to a string.
+    All other operators (-, *, /) will convert everything to numbers. */
+console.log('I am ' + 23 + ' years old'); // 23 is converted to a string
+console.log('23' - '10' - 3); // strings are converted to numbers
+console.log('23' * '2'); // strings are converted to numbers
+console.log('23' / '2'); // strings are converted to numbers
