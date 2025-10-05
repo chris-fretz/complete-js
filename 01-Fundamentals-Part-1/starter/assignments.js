@@ -48,6 +48,13 @@ if(population > 33) {
     // console.log(`${country}'s population is ${33 - population} million below average.`);
 }
 
+// ASSIGNMENT: Type Conversion and Coercion
+console.log('9' - '5'); // -> 4
+console.log('19' - '13' + '17'); // -> 617
+console.log('19' - '13' + 17); // -> 23
+console.log('123' < 57); // -> false
+console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
+
 // ASSIGNMENT: Equality Operators: == vs. ===
 /* const numNeighbors = Number(prompt('How many neighbour countries does your country have?'));
 
@@ -65,11 +72,3 @@ if (language === 'English' && population < 50 && !isIsland) {
 } else {
     console.log('The U.S. does not meet your criteria :(');
 }
-
-// ASSIGNMENT: Type Conversion and Coercion
-console.log('9' - '5'); // -> 4
-console.log('19' - '13' + '17'); // -> 617
-console.log('19' - '13' + 17); // -> 23
-console.log('123' < 57); // -> false
-console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
-
