@@ -68,7 +68,32 @@ if (numNeighbors === 1) {
 
 // ASSIGNMENT: Logical Operators
 if (language === 'English' && population < 50 && !isIsland) {
-    console.log('You should live in the U.S. :)');
+    // console.log('You should live in the U.S. :)');
 } else {
-    console.log('The U.S. does not meet your criteria :(');
+    // console.log('The U.S. does not meet your criteria :(');
 }
+
+// ASSIGNMENT: Switch Statement
+switch (language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'English':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+}
+
+// ASSIGNMENT: The Conditional (Ternary) Operator
+population > 33 ? console.log("US's population is above average") : console.log("US's population is below average");

@@ -49,3 +49,28 @@ console.log('I am ' + 23 + ' years old'); // 23 is converted to a string
 console.log('23' - '10' - 3); // strings are converted to numbers
 console.log('23' * '2'); // strings are converted to numbers
 console.log('23' / '2'); // strings are converted to numbers
+
+// Switch Statement
+const day = "Fake day";
+
+switch (day) {
+    case 'Monday':
+        console.log("It's Monday! Start your week!");
+        break;
+    case 'Tuesday':
+    case 'Wednesday':
+        console.log("You're in the thick of it! You can do this!");
+        break;
+    case 'Thursday':
+        console.log("The week is more than half over!");
+        break;
+    case 'Friday':
+        console.log("TGIF!");
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log("Enjoy your weekend!");
+        break;
+    default:
+        console.log("You've broken out of the space time continuum!");
+}
