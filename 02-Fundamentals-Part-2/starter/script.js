@@ -31,6 +31,7 @@ function fruitProcessor(apples, oranges) {
 */
 
 // Lesson: Function Declarations vs. Expressions
+/*
 // Function Declaration: A named function defined with the function keyword
 // Can be called before it's declared and defined due to hoisting
 function calcAge1(birthYear) {
@@ -47,3 +48,21 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1991);
 console.log(age2);
+*/
+
+// Lesson: Arrow Functions
+
+// Arrow Function: A shorter syntax for writing function expressions whose value is returned implicitly
+// No need for the function keyword, return keyword, or curly braces for single-line functions
+// Arrow functions do not have their own 'this' keyword
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+   const age = 2037 - birthYear;
+   const retirement = 65 - age;
+   return `${firstName} retires in ${retirement} years.`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));

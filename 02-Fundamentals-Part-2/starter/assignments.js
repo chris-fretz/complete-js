@@ -10,3 +10,26 @@ const desc2 = describeCountry('India', 1380, 'New Delhi');
 const desc3 = describeCountry('Canada', 38, 'Ottawa');
 
 console.log(desc1, desc2, desc3);
+
+// ASSIGNMENT: Function Declarations vs. Expressions
+function percentageOfWorld1(population) {
+   return (population / 7900) * 100;
+}
+
+const USAPercentage1 = percentageOfWorld1(331);
+const ChinaPercentage1 = percentageOfWorld1(1441);
+const NigeriaPercentage1 = percentageOfWorld1(206);
+
+console.log(USAPercentage1, ChinaPercentage1, NigeriaPercentage1);
+
+const percentageOfWorld2 = function (population) {
+   return (population / 7900) * 100;
+}
+
+// ASSIGNMENT: Arrow Functions
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const BrazilPercentage3 = percentageOfWorld3(213);
+console.log(BrazilPercentage3);
+
+// ASSIGNMENT: Functions Calling Other Functions
