@@ -55,6 +55,7 @@ console.log(age2);
 // Arrow Function: A shorter syntax for writing function expressions whose value is returned implicitly
 // No need for the function keyword, return keyword, or curly braces for single-line functions
 // Arrow functions do not have their own 'this' keyword
+/*
 const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
@@ -66,3 +67,18 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
+*/
+
+// Lesson: Functions Calling Other Functions
+function cutFruitPieces(fruit) {
+   return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+   const applePieces = cutFruitPieces(apples);
+   const orangePieces = cutFruitPieces(oranges);
+   const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+   return juice;
+}
+
+console.log(fruitProcessor(2, 3));
