@@ -70,6 +70,7 @@ console.log(yearsUntilRetirement(1991, 'Jonas'));
 */
 
 // Lesson: Functions Calling Other Functions
+/*
 function cutFruitPieces(fruit) {
    return fruit * 4;
 }
@@ -82,3 +83,21 @@ function fruitProcessor(apples, oranges) {
 }
 
 console.log(fruitProcessor(2, 3));
+*/
+
+// Lesson: Reviewing Functions
+const calcAge = function (birthYear) {
+   return 2037 - birthYear;
+}
+const yearsUntilRetirement = function (birthYear, firstName) {
+   const age = calcAge(birthYear);
+   const retirement = 65 - age;
+
+   if (retirement > 0) {
+   return retirement;
+   } else {
+      return `${firstName} has already retired.`;
+   }
+}
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1950, 'Mike'));
