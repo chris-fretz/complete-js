@@ -86,18 +86,35 @@ console.log(fruitProcessor(2, 3));
 */
 
 // Lesson: Reviewing Functions
-const calcAge = function (birthYear) {
-   return 2037 - birthYear;
-}
-const yearsUntilRetirement = function (birthYear, firstName) {
-   const age = calcAge(birthYear);
-   const retirement = 65 - age;
+// const calcAge = function (birthYear) {
+//    return 2037 - birthYear;
+// }
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//    const age = calcAge(birthYear);
+//    const retirement = 65 - age;
 
-   if (retirement > 0) {
-   return retirement;
-   } else {
-      return `${firstName} has already retired.`;
+//    if (retirement > 0) {
+//    return retirement;
+//    } else {
+//       return `${firstName} has already retired.`;
+//    }
+// }
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(1950, 'Mike'));
+
+const jonas = {
+   firstName: 'Jonas',
+   lastName: 'Smith',
+   birthYear: 1991,
+   job: 'teacher',
+   friends: ['Abraham', 'Job', 'David'],
+   hasDriversLicense: true,
+   calcAge: function () {
+      this.age = 2037 - this.birthYear;
+      return this.age;
+   },
+   summary: function () {
+      return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
    }
 }
-console.log(yearsUntilRetirement(1991, 'Jonas'));
-console.log(yearsUntilRetirement(1950, 'Mike'));
+console.log(jonas.summary());
