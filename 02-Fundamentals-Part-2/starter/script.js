@@ -93,28 +93,11 @@ console.log(fruitProcessor(2, 3));
 //    const age = calcAge(birthYear);
 //    const retirement = 65 - age;
 
-//    if (retirement > 0) {
-//    return retirement;
-//    } else {
-//       return `${firstName} has already retired.`;
-//    }
-// }
-// console.log(yearsUntilRetirement(1991, 'Jonas'));
-// console.log(yearsUntilRetirement(1950, 'Mike'));
-
-// Challenge: Debugging Challenge
-
-// #1 Create an array of temperatures
-
-// #2 Create loop to loop over the array
-const printForecast = function (arr) {
-   let string = '';
-   for (let i = 0; i < arr.length; i++) {
-      string += `... ${arr[i]} °C in ${i + 1} days `;
+   if (retirement > 0) {
+   return retirement;
+   } else {
+      return `${firstName} has already retired.`;
    }
-   console.log(string);
 }
-printForecast([17, 21, 23]);
-// #3 Create string from loop that prints "... °C in ... days ... °C in ... days ..."
-
-// #4 Print string to console
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1950, 'Mike'));
