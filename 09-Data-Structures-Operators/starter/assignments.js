@@ -189,3 +189,12 @@ const books = [
 ];
 
 // Assignment: Destructuring Arrays
+const [firstBook, secondBook] = books;
+const [ , ,thirdBook] = books;
+
+const ratings = [['rating', 4.19], ['ratingsCount', 144584]];
+const [[ ,rating], [ ,ratingsCount]] = ratings;
+
+const ratingStars = [63405, 1808];
+const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
