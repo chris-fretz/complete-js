@@ -244,3 +244,65 @@ const printBookInfo = function({title, author, year = 'year unknown'}) {
 
 printBookInfo(books[0]);
 printBookInfo(books[3]);
+
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski',
+  'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+// Challenge #1
+// Task #1 - Using destructuring
+const [players1, players2] = game.players;
+
+// Task #2 - Using destructuring with the rest operator
+const [gk, ...fieldPlayers] = players1;
+
+// Task #3 - Using the spread operator to combine two arrays
+const allPlayers = [...players1, ...players2];
+
+// Task #4 - Using spread operator
+const players1Final = [...players, 'Thiago', 'Coutinho', 'Periscic'];
+
+// Task #5
+const {
+  odds: {team1, x: draw, team2}
+} = game;
+
+// Task 6
