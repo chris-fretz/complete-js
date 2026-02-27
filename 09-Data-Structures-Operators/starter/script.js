@@ -45,3 +45,7 @@ const restaurant = {
     },
   },
 };
+
+const setOfData = new Set(['Item 1', 'Item 2', 'duplicate', 'duplicate', 'Item 3']);
+
+console.log(setOfData);
