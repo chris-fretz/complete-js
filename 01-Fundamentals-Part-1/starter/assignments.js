@@ -1,99 +1,11 @@
+'use strict';
+
 // From: https://jonas.io/assignments/instructions.html
 
-// ASSIGNMENT: Values & Variables
-const country = "United States";
-const continent = "North America";
-let population = 342;
+let country = "United States";
+let continent = "North America";
+let population = 342.5;
 
-// console.log(country);
-// console.log(continent);
-// console.log(population);
-
-// ASSIGNMENT: Data Types
-const isIsland = false;
-let language;
-
-// console.log(typeof isIsland);
-// console.log(typeof population);
-// console.log(typeof country);
-// console.log(typeof language);
-
-// ASSIGNMENT: let, const, and var
-language = "English";
-
-// Assignment: Basic Operators
-const populationHalved = population / 2;
-// console.log(populationHalved);
-
-const populationPlusOne = population++;
-// console.log(populationPlusOne);
-
-populationComparedWithFinland = population > 6;
-// console.log(populationComparedWithFinland);
-
-const populationMoreThanAvg = population < 33;
-// console.log(populationMoreThanAvg);
-
-const description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
-// console.log(description);
-
-// ASSIGNMENT: Strings & Template Literals
-const descriptionUpdated = `${country} is in ${continent} and it's ${population} million people speak ${language}.`;
-// console.log(descriptionUpdated);
-
-// ASSIGNMENT: if/else statements
-if(population > 33) {
-    // console.log(`${country}'s population is above average.`);
-} else {
-    // console.log(`${country}'s population is ${33 - population} million below average.`);
-}
-
-// ASSIGNMENT: Type Conversion and Coercion
-console.log('9' - '5'); // -> 4
-console.log('19' - '13' + '17'); // -> 617
-console.log('19' - '13' + 17); // -> 23
-console.log('123' < 57); // -> false
-console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
-
-// ASSIGNMENT: Equality Operators: == vs. ===
-/* const numNeighbors = Number(prompt('How many neighbour countries does your country have?'));
-
-if (numNeighbors === 1) {
-    console.log('Only 1 border');
-} else if (numNeighbors > 1) {
-    console.log('More than 1 border');
-} else {
-    console.log('No borders');
-} */
-
-// ASSIGNMENT: Logical Operators
-if (language === 'English' && population < 50 && !isIsland) {
-    // console.log('You should live in the U.S. :)');
-} else {
-    // console.log('The U.S. does not meet your criteria :(');
-}
-
-// ASSIGNMENT: Switch Statement
-switch (language) {
-    case 'chinese':
-    case 'mandarin':
-        console.log('MOST number of native speakers!');
-        break;
-    case 'spanish':
-        console.log('2nd place in number of native speakers');
-        break;
-    case 'English':
-        console.log('3rd place');
-        break;
-    case 'hindi':
-        console.log('Number 4');
-        break;
-    case 'arabic':
-        console.log('5th most spoken language');
-        break;
-    default:
-        console.log('Great language too :D');
-}
-
-// ASSIGNMENT: The Conditional (Ternary) Operator
-population > 33 ? console.log("US's population is above average") : console.log("US's population is below average");
+console.log(country);
+console.log(continent);
+console.log(population);
