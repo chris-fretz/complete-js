@@ -114,7 +114,7 @@ const printForecast = function (arr) {
    }
    console.log(string);
 }
-printForecast([17, 21, 23]);
+// printForecast([17, 21, 23]);
 // #3 Create string from loop that prints "... °C in ... days ... °C in ... days ..."
 
 // #4 Print string to console
